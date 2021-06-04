@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styleCheatsheet.css">
+  <title>HTML Cheatsheet</title>
+</head>
+
+<body>
+  <header>
+    <div class='container' id="header-container">
+      <h1>HTML Cheatsheet</h1>
+    </div>
+  </header>
+  <main>
+    <div class="container" id="main-container">
+      <section>
+        <article>
+          <h2>What is HTML?</h2>
+          <p>HTML (HyperText Markup Language) is a lenguage used to structure and give content to a website.</p>
+          <p>Similar to the skeleton on the human body</p>
+          <p>This language is composed by tags, formed by two parts the opening and the closing tag
+            the content will be inside them. For example:</p>
+
+          <p class="code example center">
+            opening tag--&gt &lthtml&gt content &lt/html&gt &lt-- closing tag
+          </p>
+        </article>
+      </section>
+      <section>
+        <article>
+          <h2>Basic structure</h2>
+          <p>An HTML basic structure is composed of the following elements</p>
+          <p class="code example">&lt!DOCTYPE html&gt &lt!-- Specify the document type (HTML5) to the browser--&gt <br>
+            &nbsp&nbsp&lthtml&gt &lt!--The web page will be inside this tag--&gt <br>
+            &nbsp&nbsp&nbsp&nbsp&lthead&gt &lt!--The metadata (info needed by the browser not by the user) will be here --&gt<br>
+            &nbsp&nbsp&nbsp&nbsp&lthead&gt <br>
+            &nbsp&nbsp&nbsp&nbsp&lt/body&gt &lt!--The visible content of the web page will be here--&gt<br>
+            &nbsp&nbsp&nbsp&nbsp&lt/body&gt <br>
+            &nbsp&nbsp&lt/html&gt <br>
+          </p>
+        </article>
+      </section>
+      <section>
+        <article>
+          <h2>Semantic Tags</h2>
+          <p>These tags describe the content of themselves, making the code more readable and easy to maintain.</p>
+          <table>
+            <thead>
+              <th>Tag</th>
+              <th>Description</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="code">&ltarticle&gt</td>
+                <td>An independent part of the document that makes sense on its own.</td>
+              </tr>
+              <tr>
+                <td class="code">&ltaside&gt</td>
+                <td>Extra information indirectly related to the document.</td>
+              </tr>
+              <tr>
+                <td class="code">&ltdiv&gt</td>
+                <td>Generic container.</td>
+              </tr>
+              <tr>
+                <td class="code">&ltfigure&gt</td>
+                <td>Represents self-contained content. It supports in <span class="code">&ltimg&gt</span> and <span class="code">&ltfigcaption&gt</span>.</td>
+              </tr>
+              <tr>
+                <td class="code">&ltfigcaption&gt</td>
+                <td>Describes a caption.</td>
+              </tr>
+              <tr>
+                <td class="code">&ltfooter&gt</td>
+                <td>Usually contains information about the author, copyright or navegation links related to the main content.</td>
+              </tr>
+              <tr>
+                <td class="code">&ltheader&gt</td>
+                <td>It contains the introduction of a section.</td>
+              </tr>
+              <tr>
+                <td class="code">&ltmain&gt</td>
+                <td>Used to point out the main content of the web page.</td>
+              </tr>
+              <tr>
+                <td class="code">&ltnav&gt</td>
+                <td>Provides navegation links, either to the current document or external documents.</td>
+              </tr>
+              <tr>
+                <td class="code">&ltsection&gt</td>
+                <td>A generic independent part of the document which can not be related to other semantic tag.</td>
+              </tr>
+              <tr>
+                <td class="code">&lttitle&gt</td>
+                <td>Goes into the head element and displays the title into the browser title bar.</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+      <section>
+        <article>
+          <h2>Common Tags</h2>
+          <table>
+            <thead>
+              <th>Tag</th>
+              <th>Description</th>
+              <th>Atributes needed</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="code">&lta&gt</td>
+                <td>Anchor tag creates a hyperlink to the referenced url.</td>
+                <td>href</td>
+              </tr>
+              <tr>
+                <td class="code">&ltaudio&gt</td>
+                <td>Adds an audio to the web page.</td>
+                <td>src</td>
+              </tr>
+              <tr>
+                <td class="code">&ltbutton&gt</td>
+                <td>Creates a button.</td>
+                <td>type</td>
+              </tr>
+              <tr>
+                <td class="code">&ltembed&gt</td>
+                <td>Embeds external content to the selected point of the document.</td>
+                <td>type, src, width, heigth</td>
+              </tr>
+              <tr>
+                <td class="code">&lth1&gt...&lth6&gt</td>
+                <td>Are heading elements with six levels.Higher the level bigger the heading.</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="code">&ltimg&gt</td>
+                <td>Embeds an image to the selected point of the document.</td>
+                <td>src, alt</td>
+              </tr>
+              <tr>
+                <td class="code">&ltp&gt</td>
+                <td>The content between this tag represents a paragraph (block of text).</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="code">&ltspan&gt</td>
+                <td>Inline container of text used to group elements for styling.</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="code">&ltvideo&gt</td>
+                <td>Embeds a video to the selected point of the document.</td>
+                <td>controls width</td>
+              </tr>
+              <tr>
+                <td class="code">&ltsource&gt</td>
+                <td>Specifies multiple resources for the audio,caption or video elements.</td>
+                <td>src, type</td>
+              </tr>
+              <tr>
+                <td class="code">&ltol&gt</td>
+                <td>Creates an ordered list. It leans in the <span class='code'>&ltli&gt</span> tag.</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="code">&ltul&gt</td>
+                <td>Creates an unordered list.It leans in the <span class='code'>&ltli&gt</span> tag.</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="code">&ltli&gt</td>
+                <td>Creates an element of a list.</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+      <section>
+        <article>
+          <h2>Other Tags</h2>
+          <p>Text modifing Tags</p>
+          <table>
+            <thead>
+              <th>Tag</th>
+              <th>Description</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="code">&ltb&gt</td>
+                <td>Used to bring attention to the content. Usually turns it bold.</td>
+              </tr>
+              <tr>
+                <td class="code">&ltbr&gt</td>
+                <td>Produces a break line.</td>
+              </tr>
+              <tr>
+                <td class="code">&ltem&gt</td>
+                <td>Emphasis text and normally turns it into italic</td>
+              </tr>
+              <tr>
+                <td class="code">&ltstrong&gt</td>
+                <td>Indicates important content. Turns it into bold text.</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+    </div>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+
+</html>

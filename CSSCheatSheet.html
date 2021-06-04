@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styleCheatsheet.css">
+  <title>CSS Cheatsheet</title>
+</head>
+
+<body>
+  <header>
+    <div class="container" id="header-container">
+      <h1>CSS Cheatsheet</h1>
+    </div>
+  </header>
+  <main>
+    <div class="container" id="main-container">
+      <article>
+        <section>
+          <h2>What is CSS?</h2>
+          <p>Cascading Style Sheets, is a language that is used to custumize how HTML elements show in a browser. CSS is capable of creating style clases in order to change the design of a web page</p>
+          <p>Similar to the physical characteristics of a person</p>
+          <p><strong>CSS can be written in a inline style (Inside HTML) or in a separate CSS file, in this document we will focus on the separate file.</strong></p>
+          <p>To use a separate CSS file in a certain HTML document it is needed to add this line into the HTML head tag: </p>
+          <p class="code example center">&ltlink href='path to the css file' rel='stylesheet' type='text/css'&gt</p>
+
+          <h2>Example Structure</h2>
+          <p>Let's simulate how a CSS should be applied in both a HTML file and CSS file: <br></p>
+          <p>For example lets say we wanna modify the font and size of the h1 heading. We will only need to attach the line below into the HTML file and then the following into the CSS file:</p>
+          <p class="code">&nbsp&nbsph1{ /*Here we select the part of the HTML to be modified*/<br>
+            &nbsp&nbsp&nbsp&nbspfont-family: Arial; /*We specify the property and its value, here we change the font*/<br>
+            &nbsp&nbsp&nbsp&nbspfont-size: 20px; /*And here we change the size */<br>
+            &nbsp&nbsp} /*close of the modification<br></p>
+        </section>
+      </article>
+      <article>
+        <section>
+          <h2>Selector Reference</h2>
+          <table>
+            <thead>
+              <th>Selector</th>
+              <th>Description</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="code">*</td>
+                <td>Selects all elements</td>
+              </tr>
+              <tr>
+                <td class="code">.class</td>
+                <td>Selects all elements with the specified class</td>
+              </tr>
+              <tr>
+                <td class="code">.class1.class2</td>
+                <td>Selects all elements with both classes</td>
+              </tr>
+              <tr>
+                <td class="code">.class1 .class2</td>
+                <td>Selects all .class2 elements which are inside an .class1 element</td>
+              </tr>
+              <tr>
+                <td class="code">element</td>
+                <td>Selects the specified element</td>
+              </tr>
+              <tr>
+                <td class="code">element.class</td>
+                <td>Selects the elements with the specified class</td>
+              </tr>
+              <tr>
+                <td class="code">element1, element2</td>
+                <td>Selets all elements belonging to element1 and element2</td>
+              </tr>
+              <tr>
+                <td class="code">element1 element2</td>
+                <td>Selects element2 elements inside element1</td>
+              </tr>
+              <tr>
+                <td class="code">#id</td>
+                <td>selects the unique element with the specified id property</td>
+              </tr>
+            </tbody>
+          </table>
+          <h2>Specifity</h2>
+          <p>Browsers must decide which are the most relevant values to a CSS property in a certain element. A selector could be extremly general like the * selector or extremly specific like the id selector. Browsers will apply the most specific
+            selector that they found, if a certain element has two selectors with the same value Browsers will aply the last one that they found. </p>
+          <p>For example: <br></p>
+          <p class='code example'>
+            body{ <br>
+            &nbsp&nbspfont-family: Helvetica; <br>
+            } <br>
+            h1{ <br>
+            &nbsp&nbspfont-family: monospace; <br>
+            } <br></p>
+          <p>Here the applied value will be the h1 selector, however, outside the h1 everything inside the body tag will have a Helvetica font family.</p>
+        </section>
+      </article>
+      <article>
+        <section>
+          <h2>Basic Propierties</h2>
+          <h3>Font</h3>
+          <table>
+            <thead>
+              <th>Property</th>
+              <th>Description</th>
+              <th>Values</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="code">font-family</td>
+                <td>Specifies the font family for the text</td>
+                <td>family-name, generic-family, inherit</td>
+              </tr>
+              <tr>
+                <td class="code">font-size</td>
+                <td>Specifies the font size of the text</td>
+                <td>length, %, inherit</td>
+              </tr>
+              <tr>
+                <td class="code">font-style</td>
+                <td>Specifies the syle for the font</td>
+                <td>normal, italic, oblique, inherit</td>
+              </tr>
+              <tr>
+                <td class="code">font-weight</td>
+                <td>Specifies the weight for the font</td>
+                <td>normal, bold, bolder, lighter, numerical and inherit</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Text</h3>
+          <table>
+            <thead>
+              <th>Property</th>
+              <th>Description</th>
+              <th>Values</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="code">color</td>
+                <td>Set the color for the text</td>
+                <td>RGB, HEX, keyword</td>
+              </tr>
+              <tr>
+                <td class="code">text-align</td>
+                <td>Aligns the text inside the element</td>
+                <td>left, right, center, justify</td>
+              </tr>
+              <tr>
+                <td class="code">text-transform</td>
+                <td>Transforms the letters inside the element</td>
+                <td>none, capitalize, uppercase, lowercase</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Transform</h3>
+          <table>
+            <thead>
+              <th>Property</th>
+              <th>Description</th>
+              <th>Values</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="code">background-color</td>
+                <td>Set the element background color</td>
+                <td>RGB, HEX, keyword</td>
+              </tr>
+              <tr>
+                <td class="code">border</td>
+                <td>Defines the color, style, and the width of the border </td>
+                <td>border-width, border-style, border-color</td>
+              </tr>
+              <tr>
+                <td class="code">height</td>
+                <td>Sets the height of the element</td>
+                <td>length, %, auto</td>
+              </tr>
+              <tr>
+                <td class="code">margin</td>
+                <td>Sets the distance between one element to another</td>
+                <td>lenght, %, auto</td>
+              </tr>
+              <tr>
+                <td class="code">padding</td>
+                <td>Stablish the padding space required at all sides of the element</td>
+                <td>length, percentage</td>
+              </tr>
+              <tr>
+                <td class="code">weight</td>
+                <td>Stablish the weight of the element</td>
+                <td>length, %, auto</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </article>
+    </div>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+
+</html>
