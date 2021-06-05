@@ -10,14 +10,34 @@
 </head>
 
 <body>
+  <div id="body-container">
+    <nav>
+      <table class="container none" id='links'>
+        <tr class="none">
+          <td class='none'><a href="./index.html"><button class="navbutton">Home</button></a></td>
+          <td class='none'><a href="./HTMLCheatSheet.html"><button class="navbutton">HTML Cheatsheet</button></a></td>
+        </tr>
+      </table>
+    </nav>
   <header>
     <div class="container" id="header-container">
       <h1>CSS Cheatsheet</h1>
     </div>
   </header>
+  <nav>
+    <table class="container none" id='links'>
+      <tr class="none">
+        <td class='none'><a href="#Whatis"><button>What is CSS?</button></a></td>
+        <td class='none'><a href="#ExampleS"><button>Example Structure</button></a></td>
+        <td class='none'><a href="#SelectorR"><button>Selector Reference</button></a></td>
+        <td class='none'><a href="#Specifity"><button>Specifity</button></a></td>
+        <td class='none'><a href="#BasicP"><button>Basic Propierties</button></a></td>
+      </tr>
+    </table>
+  </nav>
   <main>
     <div class="container" id="main-container">
-      <article>
+      <article id="Whatis">
         <section>
           <h2>What is CSS?</h2>
           <p>Cascading Style Sheets, is a language that is used to custumize how HTML elements show in a browser. CSS is capable of creating style clases in order to change the design of a web page</p>
@@ -26,7 +46,7 @@
           <p>To use a separate CSS file in a certain HTML document it is needed to add this line into the HTML head tag: </p>
           <p class="code example center">&ltlink href='path to the css file' rel='stylesheet' type='text/css'&gt</p>
 
-          <h2>Example Structure</h2>
+          <h2 id='ExampleS'>Example Structure</h2>
           <p>Let's simulate how a CSS should be applied in both a HTML file and CSS file: <br></p>
           <p>For example lets say we wanna modify the font and size of the h1 heading. We will only need to attach the line below into the HTML file and then the following into the CSS file:</p>
           <p class="code">&nbsp&nbsph1{ /*Here we select the part of the HTML to be modified*/<br>
@@ -35,9 +55,9 @@
             &nbsp&nbsp} /*close of the modification<br></p>
         </section>
       </article>
-      <article>
+      <article >
         <section>
-          <h2>Selector Reference</h2>
+          <h2 id="SelectorR">Selector Reference</h2>
           <table>
             <thead>
               <th>Selector</th>
@@ -82,11 +102,11 @@
               </tr>
             </tbody>
           </table>
-          <h2>Specifity</h2>
+          <h2 id='Specifity'>Specifity</h2>
           <p>Browsers must decide which are the most relevant values to a CSS property in a certain element. A selector could be extremly general like the * selector or extremly specific like the id selector. Browsers will apply the most specific
             selector that they found, if a certain element has two selectors with the same value Browsers will aply the last one that they found. </p>
           <p>For example: <br></p>
-          <p class='code example'>
+          <p class='code'>
             body{ <br>
             &nbsp&nbspfont-family: Helvetica; <br>
             } <br>
@@ -96,7 +116,7 @@
           <p>Here the applied value will be the h1 selector, however, outside the h1 everything inside the body tag will have a Helvetica font family.</p>
         </section>
       </article>
-      <article>
+      <article id=BasicP>
         <section>
           <h2>Basic Propierties</h2>
           <h3>Font</h3>
@@ -201,6 +221,7 @@
   <footer>
 
   </footer>
+  </div>
 </body>
 
 </html>

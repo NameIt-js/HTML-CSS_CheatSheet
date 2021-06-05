@@ -8,17 +8,36 @@
   <link rel="stylesheet" href="styleCheatsheet.css">
   <title>HTML Cheatsheet</title>
 </head>
-
 <body>
+  <div id="body-container">
+  <nav>
+    <table class="container none" id='links'>
+      <tr class="none">
+        <td class='none'><a href="./index.html"><button class="navbutton">Home</button></a></td>
+        <td class='none'><a href="./CSSCheatSheet.html"><button class="navbutton">CSS Cheatsheet</button></a></td>
+      </tr>
+    </table>
+  </nav>
   <header>
     <div class='container' id="header-container">
       <h1>HTML Cheatsheet</h1>
     </div>
   </header>
+  <nav>
+    <table class="container none" id='links'>
+      <tr class="none">
+        <td class='none'><a href="#Whatis"><button>What is HTML?</button></a></td>
+        <td class='none'><a href="#BasicS"><button>Basic Structure</button></a></td>
+        <td class='none'><a href="#Semantic"><button>Semantic Tags</button></a></td>
+        <td class='none'><a href="#Common"><button>Common Tags</button></a></td>
+        <td class='none'><a href="#Other"><button>Other Tags</button></a></td>
+      </tr>
+    </table>
+  </nav>
   <main>
     <div class="container" id="main-container">
       <section>
-        <article>
+        <article id="Whatis">
           <h2>What is HTML?</h2>
           <p>HTML (HyperText Markup Language) is a lenguage used to structure and give content to a website.</p>
           <p>Similar to the skeleton on the human body</p>
@@ -31,8 +50,8 @@
         </article>
       </section>
       <section>
-        <article>
-          <h2>Basic structure</h2>
+        <article id="BasicS">
+          <h2>Basic Structure</h2>
           <p>An HTML basic structure is composed of the following elements</p>
           <p class="code example">&lt!DOCTYPE html&gt &lt!-- Specify the document type (HTML5) to the browser--&gt <br>
             &nbsp&nbsp&lthtml&gt &lt!--The web page will be inside this tag--&gt <br>
@@ -45,7 +64,7 @@
         </article>
       </section>
       <section>
-        <article>
+        <article id="Semantic">
           <h2>Semantic Tags</h2>
           <p>These tags describe the content of themselves, making the code more readable and easy to maintain.</p>
           <table>
@@ -103,7 +122,7 @@
         </article>
       </section>
       <section>
-        <article>
+        <article id="Common">
           <h2>Common Tags</h2>
           <table>
             <thead>
@@ -182,7 +201,7 @@
         </article>
       </section>
       <section>
-        <article>
+        <article id="Other">
           <h2>Other Tags</h2>
           <p>Text modifing Tags</p>
           <table>
@@ -216,6 +235,7 @@
   <footer>
 
   </footer>
+  </div>
 </body>
 
 </html>
